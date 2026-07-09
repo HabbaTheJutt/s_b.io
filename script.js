@@ -2,6 +2,29 @@ const yes = document.getElementById("yes");
 const no = document.getElementById("no");
 const main = document.getElementById("main");
 
+async function notifyMe() {
+    try {
+        await fetch("https://ntfy.sh/salmabirthdayinv125", {
+            method: "POST",
+            body: "She pressed YES! ❤️"
+        });
+    } catch (err) {
+        console.error(err);
+    }
+}
+
+yes.addEventListener("click", () => {
+
+    notifyMe();
+
+    main.innerHTML = `
+        <h1 style="font-size:70px;">💖</h1>
+        <h2>Thank you and see you soon birthday girl 💕</h2>
+    `;
+
+    // rest of your code...
+});
+
 function moveButton(){
 
 const padding = 15;
