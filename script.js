@@ -57,6 +57,8 @@ heart.className="heart";
 
 heart.innerHTML="❤️";
 
+image.style.top = "-50px";
+
 heart.style.left=Math.random()*window.innerWidth+"px";
 
 heart.style.fontSize=(20+Math.random()*30)+"px";
@@ -76,6 +78,8 @@ const img=document.createElement("img");
 img.src="girl.png";
 
 img.className="rain-image";
+
+image.style.top = "-50px";
 
 img.style.left=Math.random()*window.innerWidth+"px";
 
