@@ -80,7 +80,7 @@ heart.className="heart";
 
 heart.innerHTML="❤️";
 
-image.style.top = "-50px";
+heart.style.top = "-50px";
 
 heart.style.left=Math.random()*window.innerWidth+"px";
 
@@ -102,7 +102,7 @@ img.src="girl.png";
 
 img.className="rain-image";
 
-image.style.top = "-50px";
+img.style.top = "-50px";
 
 img.style.left=Math.random()*window.innerWidth+"px";
 
