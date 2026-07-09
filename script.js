@@ -20,6 +20,7 @@ yes.addEventListener("click", () => {
     main.innerHTML = `
         <h1 style="font-size:70px;">💖</h1>
         <h2>Thank you and see you soon birthday girl 💕</h2>
+	<h3>See you at 6PM</h3>
     `;
 
     // rest of your code...
