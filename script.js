@@ -74,46 +74,41 @@ setTimeout(createImage,i*70);
 
 function createHeart(){
 
-const heart=document.createElement("div");
+    const heart = document.createElement("div");
 
-heart.className="heart";
+    heart.className = "heart";
 
-heart.innerHTML="❤️";
+    heart.innerHTML = "❤️";
 
-heart.style.top = "-50px";
+    heart.style.left = Math.random() * window.innerWidth + "px";
 
-heart.style.left=Math.random()*window.innerWidth+"px";
+    heart.style.fontSize = (20 + Math.random() * 30) + "px";
 
-heart.style.fontSize=(20+Math.random()*30)+"px";
+    heart.style.animationDuration = (3 + Math.random() * 3) + "s";
 
-heart.style.animationDuration=(3+Math.random()*3)+"s";
+    document.body.appendChild(heart);
 
-document.body.appendChild(heart);
-
-setTimeout(()=>heart.remove(),7000);
-
+    setTimeout(() => heart.remove(),7000);
 }
 
 function createImage(){
 
-const img=document.createElement("img");
+    const img = document.createElement("img");
 
-img.src="girl.png";
+    img.src = "girl.png";
 
-img.className="rain-image";
+    img.className = "rain-image";
 
-img.style.top = "-50px";
+    img.style.left = Math.random() * window.innerWidth + "px";
 
-img.style.left=Math.random()*window.innerWidth+"px";
+    img.style.animationDuration = (4 + Math.random() * 3) + "s";
 
-img.style.animationDuration=(4+Math.random()*3)+"s";
+    img.style.transform =
+        `rotate(${Math.random()*360}deg)`;
 
-img.style.transform=`rotate(${Math.random()*360}deg)`;
+    document.body.appendChild(img);
 
-document.body.appendChild(img);
-
-setTimeout(()=>img.remove(),8000);
-
+    setTimeout(() => img.remove(),8000);
 }
 
 window.addEventListener("resize",moveButton);
